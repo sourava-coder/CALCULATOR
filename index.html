@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="calc">
+  <div class="top"><span>Calculator</span><button class="theme" id="theme" type="button">Dark mode</button></div>
+  <div class="screen" aria-live="polite">
+    <div class="expr" id="expr"></div>
+    <div class="out" id="out">0</div>
+  </div>
+  <div class="history" id="hist">Your last results appear here</div>
+  <div class="keys">
+    <button class="k fn" data-a="clear">C</button>
+    <button class="k fn" data-a="neg">±</button>
+    <button class="k fn" data-a="pct">%</button>
+    <button class="k op" data-o="÷">÷</button>
+    <button class="k" data-d="7">7</button><button class="k" data-d="8">8</button><button class="k" data-d="9">9</button>
+    <button class="k op" data-o="×">×</button>
+    <button class="k" data-d="4">4</button><button class="k" data-d="5">5</button><button class="k" data-d="6">6</button>
+    <button class="k op" data-o="−">−</button>
+    <button class="k" data-d="1">1</button><button class="k" data-d="2">2</button><button class="k" data-d="3">3</button>
+    <button class="k op" data-o="+">+</button>
+    <button class="k" data-d="0">0</button>
+    <button class="k" data-a="dot">.</button>
+    <button class="k fn" data-a="back" aria-label="Delete last digit">⌫</button>
+    <button class="k eq" data-a="eq">=</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
